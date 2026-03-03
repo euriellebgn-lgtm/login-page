@@ -1,0 +1,108 @@
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background: #f4f4f9;
+    margin: 0;
+    padding: 20px;
+    max-width: 900px;
+    margin-left: auto;
+    margin-right: auto;
+    color: #333;
+}
+
+h1, h2, h3 {
+    text-align: center;
+    color: #444;
+}
+
+/* Deck container */
+.deck {
+    background: #fff;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    padding: 20px;
+    margin-bottom: 25px;
+    transition: transform 0.2s;
+}
+
+.deck:hover {
+    transform: translateY(-3px);
+}
+
+/* Deck header */
+.deck h3 {
+    margin-top: 0;
+    color: #2c3e50;
+}
+
+/* Buttons */
+button {
+    padding: 8px 15px;
+    margin: 5px 5px 5px 0;
+    border: none;
+    border-radius: 5px;
+    background: #3498db;
+    color: #fff;
+    cursor: pointer;
+    font-size: 0.9rem;
+    transition: background 0.2s;
+}
+
+button:hover {
+    background: #2980b9;
+}
+
+/* Delete button */
+form button[name="delete_deck"] {
+    background: #e74c3c;
+}
+
+form button[name="delete_deck"]:hover {
+    background: #c0392b;
+}
+
+/* Input fields */
+input[type="text"] {
+    padding: 6px 10px;
+    margin: 5px 0;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    width: calc(100% - 24px);
+    box-sizing: border-box;
+}
+
+/* Quiz cards */
+.quiz-card {
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    padding: 10px;
+    margin: 10px 0;
+    background: #fafafa;
+}
+
+/* Correct/Incorrect */
+.correct {
+    background-color: #c8ffc8 !important;
+    border-color: #2ecc71 !important;
+}
+
+.incorrect {
+    background-color: #ffc8c8 !important;
+    border-color: #e74c3c !important;
+}
+
+/* Add deck form */
+form[name="add-deck-form"] {
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+form[name="add-deck-form"] input {
+    max-width: 300px;
+}
+
+/* Quiz container */
+.quiz-container {
+    margin-top: 15px;
+}
+
+#quiz{display: none;}
